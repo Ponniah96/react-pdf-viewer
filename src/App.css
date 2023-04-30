@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+.react-app {
+  /* text-align: center; */
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* align-items: center;
+  justify-content: center; */
+  /* font-size: calc(10px + 2vmin); */
+  font-size: 16px;
   color: white;
+  /* padding: 25px 50px; */
 }
 
-.App-link {
-  color: #61dafb;
+.react-app-header{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: black;
+  text-align: center;  
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.react-app-header-text{
+  font-size: 30px;
+  margin: 20px 0px;
 }
+
+
+/***Top Nav Bar changes starts **/
+.top-nav-bar{
+  width: 100%;
+  background: black;
+}
+
+.top-nav-bar ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 15px;
+}
+
+.top-nav-bar ul li:hover{
+  background: grey;
+}
+
+.top-nav-bar ul li .top-nav-bar-links{
+  text-decoration: none;
+  color: #999999;
+  font-weight: 600;
+}
+
+.top-nav-bar ul li:hover .top-nav-bar-links{
+color: white;
+
+}
+
+.top-nav-dropdown{
+  position: absolute;
+  box-shadow: 0 0 4px 2px(0,0,0.05);
+  border: 1px solid #d0d0d0;
+  background: white;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.top-nav-dropdown .top-nav-dropdown-links{
+  display: block;
+  padding: 10px 20px;
+  color: grey !important;
+  text-decoration: none;
+}
+
+.top-nav-dropdown .top-nav-dropdown-links:hover{
+  background: lightgray;
+  color: white  !important;
+}
+
+.top-nav-bar ul li:hover .top-nav-dropdown{
+  display: block !important;
+}
+/***Top Nav Bar changes Ends **/
+
+
+/*** Body Changes Starts **/
+
+.react-body{
+  padding: 0px 40px;
+}
+
+.upload-pdf-form{
+  width: 50%;
+  border: 1px solid;
+  padding: 25px 10px;
+}
+
+.pdf-view-layout{
+  height: 500px;
+  width: 800px;
+  margin: auto;
+  border: '1px solid rgba(0, 0, 0, 0.3)';
+}
+
+/*** Body Changes Ends **/
